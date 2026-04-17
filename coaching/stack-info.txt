@@ -1,0 +1,3 @@
+=== Package Detection for dominion-suite ===
+
+=== Git Info ===

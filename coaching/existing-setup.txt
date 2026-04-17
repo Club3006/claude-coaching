@@ -1,0 +1,40 @@
+=== Project: dominion-suite ===
+=== Path: /Users/craigfuhr/Documents/dominion-suite ===
+
+=== CLAUDE.md ===
+# Dominion Suite
+
+## Structure
+- `modules/lead-intelligence/` -- upstream lead discovery & enrichment engine
+- `campaign_mgr/` -- campaign operations CRM (live, Vercel-deployed)
+- `dlf-epfs/` -- electronic PFS app (live, Vercel-deployed)
+- `lender-portal` -> external: `dlf_portal/intake` (live, Vercel-deployed)
+- `borrower-portal` -> external: `dfs-borrower-portal` (live, Vercel-deployed)
+- `rec-me` -> external: `rec-me-vercel` (live, Vercel-deployed)
+- `docs/` -- suite-level documentation
+
+## Active Build
+Lead Intelligence Module: see `modules/lead-intelligence/CLAUDE.md`
+Milestones M1-M5: see `modules/lead-intelligence/milestones/`
+
+## Shared Database
+All suite apps share Supabase project `vgtnlrmbojklvgjzlhxs`.
+
+## Phase 2 Restructure (Deferred)
+After M1-M5 are complete and stable, the remaining restructure moves live apps into `apps/`, creates `shared/`, and removes legacy symlinks. See `docs/suite/DIRECTORY_RESTRUCTURE_REPORT.md` for the full target state.
+
+=== .claude/ directory ===
+total 16
+drwxr-xr-x@  4 craigfuhr  staff  128 Apr 14 19:05 .
+drwxr-xr-x@ 15 craigfuhr  staff  480 Apr 14 09:32 ..
+-rw-r--r--@  1 craigfuhr  staff  212 Apr 14 09:33 launch.json
+-rw-r--r--@  1 craigfuhr  staff  459 Apr 14 19:05 settings.local.json
+
+=== .claude/settings.json ===
+(no settings.json)
+
+=== Existing skills ===
+
+=== Existing agents ===
+
+=== Existing commands ===
